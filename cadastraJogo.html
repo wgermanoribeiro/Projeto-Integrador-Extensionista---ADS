@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="cadastraJogo2.css"
+      media="screen"
+    />
+
+    <title>Cadastro de Games</title>
+  </head>
+
+  <body>
+    <div class="titulo1">
+      <h1 id="titulo">Cadastro de Games Antigos Jogados na Infância</h1>
+      <p id="subtitulo"></p>
+      <br />
+    </div>
+
+    <form method="POST" action="cadastra_jogo.php">
+      <div class="grupo">
+        <div class="campo">
+          <label for="nomedojogo"><strong>Nome do jogo:</strong></label>
+          <input type="text" name="nomedojogo" id="nomedojogo" required />
+        </div>
+
+        <div class="campo">
+          <label for="produtora"><strong>Produtora:</strong></label>
+          <input type="text" name="produtora" id="produtora" required />
+        </div>
+        <div class="campo">
+          <label for="ano_lancamento">Ano de Lançamento:</label>
+          <br />
+          <input
+            type="number"
+            id="ano_lancamento"
+            name="ano_lancamento"
+            min="1900"
+            max="2099"
+            required
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="campo">
+        <label for="genero"><strong>Gênero do Jogo</strong></label>
+        <select id="genero" name="genero" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Ação</option>
+          <option>Aventura</option>
+          <option>Estratégia</option>
+          <option>RPG</option>
+          <option>Esporte</option>
+          <option>Corrida</option>
+          <option>Simulação</option>
+          <option>FPS</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div class="campo">
+        <label for="console"><strong>Console que finalizei</strong></label>
+        <select id="console" name="console" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Nintendinho</option>
+          <option>Super Nintendo</option>
+          <option>Mega Drive</option>
+          <option>Sega Saturno</option>
+          <option>Playstation</option>
+          <option>Nintendo 64</option>
+          <option>PC</option>
+          <option>GameBoy</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div class="campo">
+        <label for="players"
+          ><strong> Quantos jogadores simultaneamente?</strong></label
+        >
+        <select id="players" name="players" required>
+          <option selected disabled value="">Selecione</option>
+          <option>1 Jogador</option>
+          <option>2 Jogadores</option>
+          <option>Multiplayer Online</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div class="campo">
+        <label for="finalizado"
+          ><strong>Finalizei o Jogo? (Zerei??)</strong></label
+        >
+        <select id="finalizado" name="finalizado" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="campo">
+        <label for="video">Vídeo (link do YouTube):</label>
+        <input type="url" id="video" name="video" />
+      </div>
+
+      <button class="botaoInicio" type="submit" onsubmit="">Cadastrar</button>
+      <a href="index.html">
+        <input class="botaoInicio" type="button" value="Cancelar" />
+      </a>
+    </form>
+  </body>
+</html>

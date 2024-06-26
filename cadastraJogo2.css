@@ -1,0 +1,165 @@
+/* cadastraJogo.css */
+* {
+  font-family: sans-serif;
+  color: #070951;
+  --background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-display-of-old-games-and-consoles-picture-image_2652598.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.inicio {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.titulo1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type='text'],
+input[type='url'],
+select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input[type='number'],
+select {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.campo input:focus,
+.campo select:focus {
+  background: #f0f0ff;
+}
+
+#genero {
+  width: auto;
+  padding: 6px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#console {
+  width: auto;
+  padding: 6px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#players {
+  width: auto;
+  padding: 6px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#finalizado {
+  width: auto;
+  padding: 6px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.botaoInicio {
+  background-color: #070951;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.botaoInicio:hover {
+  background-color: #0056b3;
+}
+
+.botaoEditar {
+  background-color: #2dc92b;
+  color: #fff;
+  border: solid 2px #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.botaoEditar:hover {
+  background-color: #83f272;
+}
+
+.botaoExcluir {
+  background-color: #b71212;
+  color: #fff;
+  border: solid 2px #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.botaoExcluir:hover {
+  background-color: #cc1818;
+}
+
+table,
+th,
+td {
+  border: 2px solid #ddd;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.tabelaLista {
+  height: 10px;
+  background-color: #f9f9f9;
+}
+
+.pontinhosBotao {
+  color: #dddddd00;
+}
